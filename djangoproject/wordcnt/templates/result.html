@@ -1,11 +1,21 @@
-<h1>당신이 입력한 텍스트는 {{total}}개의 단어로 구성되어 있습니다.</h1>
-        <br>
-        <a href="{%url 'home'%}">다시 하기</a>
-        <h3>입력한 텍스트:</h3>
-        {{full}}
-        <br>
-        <h3>단어 카운트:</h3>
-        {% for word, howmany in dictionary %}
-        {{word}} : {{howmany}}<h4>번</h4>
-        <br>
-        {%endfor%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>wordcount_result</title>
+    </head>
+    <body>
+        <div>
+                <h1>당신이 입력한 텍스트는 {{total}}개의 단어로 구성되어 있습니다.</h1>
+                <br>
+                <a href="{%url 'home'%}">다시 하기</a>
+                <h3>입력한 텍스트:</h3>
+                {{full}}
+                <br>
+                <h3>단어 카운트:</h3>
+                {% for word, howmany in dictionary %}
+                {{word}} : {{howmany}}<h4>번</h4>
+                <br>
+                {%endfor%}
+        </div>
+    </body>
+</html>
