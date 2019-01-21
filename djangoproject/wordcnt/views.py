@@ -22,8 +22,8 @@ def result(reqeust):
 
     for word in nouns:
         if word in word_dictionary:
-            word_dictionary[word]+=1
+            word_dictionary[word]+=count
         else :
-            word_dictionary[word]=1
+            word_dictionary[word]=count
 
     return render(reqeust,'result.html',{'full':text,'total':len(nouns),'dictionary':word_dictionary.items()})
