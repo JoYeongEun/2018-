@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from konlpy.tag import Twitter
 
 # Create your views here.
 def home(reqeust):
@@ -12,12 +11,9 @@ def result(reqeust):
     text = reqeust.GET['fulltext']
     words = text.split()
 
-    nlpy = Twitter()
-    nouns = nlpy.nouns(words)
-
     word_dictionary = {}
 
-    for word in nouns:
+    for word in words:
         if word in word_dictionary:
             word_dictionary[word]+=1
         else :
