@@ -19,4 +19,4 @@ def result(reqeust):
         else :
             word_dictionary[word]=1
 
-    return render(reqeust,'result.html',{'full':text,'total':len(nouns),'dictionary':word_dictionary.items()})
+    return render(reqeust,'result.html',{'full':text,'total':len(words),'dictionary':word_dictionary.items()})
