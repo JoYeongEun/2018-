@@ -66,11 +66,15 @@ body {
     color: #333;
     font-family: 'Varela Round', sans-serif;
     font-size: 18px;
+
   }
-  
-  footer {
-    background-color: #DBE9EE;
+
+  p.content{
+    overflow: scroll;
+    font-family: 'Oswald', sans-serif;
     text-align: center;
+    font-weight: bold;
+    height: 300px;
   }
   
   .intro {
@@ -79,6 +83,7 @@ body {
     padding: 40px;
     text-align: center;
     width: 100%;
+    border: dotted skyblue;
   }
   
   .content {
