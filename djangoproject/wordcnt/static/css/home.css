@@ -3,7 +3,7 @@ body{
   text-align: center;
   margin: 0 auto;
 }
-
+/*상단 메뉴 디자인*/
 ul{
   width:100%;
   height:50px;
@@ -70,16 +70,15 @@ li:hover{
 
 .textbox {
   background-color: #FFF;
-  text-align: left;
+  opacity: 0.8;
   padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px; 
+  padding-top: 10px; 
   color:#333;
   font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  border: 2px #2C3E50 solid;
   overflow: scroll;
+  text-align: center;
 }
 
 footer.day{
@@ -98,3 +97,86 @@ footer.day{
   height: 70px;
 }
 
+.container {
+  padding: 2em;
+}
+
+/* GENERAL BUTTON STYLING */
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button {
+  background: none;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px auto;
+  padding: 10px 10px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+button::before,
+button::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #2ecc71;
+}
+
+/* BUTTON 1 */
+.btn-1::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-1:hover:after {
+  height: 100%;
+}
+
+table.type07 {
+    border-collapse: collapse;
+    text-align: center;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+table.type07 thead {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    background: #2C3E50;
+}
+table.type07 thead th {
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #fff;
+}
+table.type07 tbody th {
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+    background: #ace7da;
+}
+table.type07 td {
+    width: 350px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}

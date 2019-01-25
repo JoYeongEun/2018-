@@ -15,8 +15,7 @@
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700|Oswald:300,400,700" rel="stylesheet">
-    
-    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
    
     <meta charset="utf-8">
         <title>wordcount_about</title>
@@ -24,38 +23,44 @@
         <link rel="stylesheet" href="{% static 'css/about.css' %}">
     </head>
     <body>
-            <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                      MENU
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="{%url 'about'%}">한국어</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="{%url 'home'%}">ENGLISH</a></li>
-                      
-                    </ul>
-                  </div>
-        <div class="menubar">
+        <div>
             <ul>
+                <a href="{%url 'home'%}"><li class="back">LIKELION WORDCOUNT HOMEPAGE</li></a>
                 <a href="{%url 'home'%}"><li>HOME</li></a>
                 <a href="{%url 'about'%}"><li>ABOUT</li></a>
+                <a href="#"><li>CONTACT</li></a>
             </ul>
         </div>
+        <div class="title">
+            <img src="https://www.nowoncosmos.or.kr/img/img_school.png" alt="소개이미지" width="300" height="350" align="left">
+            <div class="text">
+                <h4>Are you curious about <strong>wordcount homepage</strong>?</h4>
+                <br>
+                <h6>이 사이트는 제가 멋쟁이 사자처럼 7기 운영진 강좌를 들으며 만든 
+                저의 첫 페이지 입니다.
 
-        <div class="header">
-            <h3>welcome to wordcount HomePage</h3>
-        </div>
-    
-        <div class="howtouse">
-            <h3>HOW TO USE</h3>
-            <br>
-            <P>원하는 텍스트를 복사하신 후 텍스트 박스에 붙여넣으세요. 그 다음 wordcount 버튼을 눌러 제출하시면
-                텍스트이 각 단어 빈도 수를 알려드립니다!</P>
-            <br>
-            <br> 
-            <h3>위와 같은 방법으로 wordcount를 이용해 보세요!^^</h3> 
-            <br>           
+                아직 완벽한 페이지의 기능을 하진 못하지만 
+
+                점차 공부를 하며 더 보기 좋은 웹 페이지를 만들어 볼 계획입니다.
+
+                사이트에서 원하는 텍스트의 단어 갯수를 count 해보세요! 
+                </h6>
+                <br>
+                <h6>
+                ▶▶페이지 이외에 저에 대해 궁금하신 부분이 있다면 
+                CONTACT 메뉴를 클릭하여 봐주시길 바랍니다!
+                </h6>
+                <h5>Reference site:  
+                <a href="https://www.codecademy.com/learn/learn-css" target="blank_">site #1,</a>
+                <a href="https://ojji.wayful.com/" target="blank_">site #2,</a>
+                <a href="https://class.likelion.org/lectures/web-basic" target="blank_">site #3</a>
+                </h5>
+            </div>
         </div>
 
+        <footer class="day">
+            <p>Copyright © ChoYeongEun 2019</p>
+            <p>KungsungUniv.likelion 7th</p>
+        </footer>
     </body>
 </html>
