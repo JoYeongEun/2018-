@@ -7,22 +7,26 @@
         <link rel="stylesheet" href="{% static 'css/result.css' %}">
     </head>
     <body>
+            <div>
+                    <ul>
+                            <a href="{%url 'home'%}"><li class="back">LIKELION WORDCOUNT HOMEPAGE</li></a>
+                            <a href="{%url 'home'%}"><li>HOME</li></a>
+                            <a href="{%url 'about'%}"><li>ABOUT</li></a>
+                    </ul>
+    </div>
+
         <div class="textbox">
                 <h1>당신이 입력한 텍스트는 {{total}}개의 단어로 구성되어 있습니다.</h1>
                 <br>
-                <h2>입력한 텍스트:
+                <h2>입력한 텍스트:</h2>
                     {{full}}
-                </h2>
                 <br>
 
-                <h1>단어 카운트:
-                
+                <h1>단어 카운트:</h1>
                     {% for word, howmany in dictionary %}
                     {{word}} : {{howmany}}
                     <br>
                     {%endfor%}
-               <br>
-                </h1>
         </div>
         <footer class="day">
                 <p>Copyright © ChoYeongEun 2019</p>

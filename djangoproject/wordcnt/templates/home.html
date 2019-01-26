@@ -28,7 +28,6 @@
                                         <a href="{%url 'home'%}"><li class="back">LIKELION WORDCOUNT HOMEPAGE</li></a>
                                         <a href="{%url 'home'%}"><li>HOME</li></a>
                                         <a href="{%url 'about'%}"><li>ABOUT</li></a>
-                                        <a href="#"><li>CONTACT</li></a>
                                 </ul>
                 </div>
 
@@ -63,13 +62,16 @@
                                                 </tbody>
                                             </table>
                                             <br>
-                    <textarea cols="80" rows="10" maxlengt="2500" name="fulltext"></textarea>
-                    
+                    <form action="{%url 'result'%}">
+                            <textarea cols="80" rows="10" maxlengt="2500" name="fulltext"></textarea>
+                            <br>
+                            <div class="container" type="submit">
+                                    <a href="{%url 'result'%}"><button class="btn-1">submit</button></a>
+                            </div>
+                        </form>
                 </div>
-                    
-                <div class="container">
-                        <a href="{%url 'result'%}"><button class="btn-1">submit</button></a>
-                </div>
+                
+                
                 
                 <footer class="day">
                         <p>Copyright © ChoYeongEun 2019</p>

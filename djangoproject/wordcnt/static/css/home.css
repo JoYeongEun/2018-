@@ -69,7 +69,7 @@ li:hover{
 }
 
 .textbox {
-  background-color: #FFF;
+  background-color: lightgrey;
   opacity: 0.8;
   padding-left: 10px;
   padding-top: 10px; 
@@ -112,9 +112,9 @@ button::after {
 
 button {
   background: none;
-  border: 3px solid #fff;
+  border: 3px solid #2C3E50;
   border-radius: 5px;
-  color: #fff;
+  color: #2C3E50;
   display: block;
   font-size: 18px;
   font-weight: bold;
@@ -152,12 +152,12 @@ table.type07 {
     border-collapse: collapse;
     text-align: center;
     line-height: 1.5;
-    border: 1px solid #ccc;
+    border: 1px solid gray;
     margin: 0 auto;
 }
 table.type07 thead {
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
     background: #2C3E50;
 }
 table.type07 thead th {
@@ -171,12 +171,12 @@ table.type07 tbody th {
     padding: 10px;
     font-weight: bold;
     vertical-align: top;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid gray;
     background: #ace7da;
 }
 table.type07 td {
     width: 350px;
     padding: 10px;
     vertical-align: top;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid gray;
 }
