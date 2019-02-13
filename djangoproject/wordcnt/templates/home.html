@@ -23,45 +23,45 @@
     
     </head>
     <body>  
-                <div>
-                                <ul>
-                                        <a href="{%url 'home'%}"><li class="back">LIKELION WORDCOUNT HOMEPAGE</li></a>
-                                        <a href="{%url 'home'%}"><li>HOME</li></a>
-                                        <a href="{%url 'about'%}"><li>ABOUT</li></a>
-                                </ul>
-                </div>
+        <div>
+            <ul>
+                <a href="{%url 'home'%}"><li class="back">LIKELION WORDCOUNT HOMEPAGE</li></a>
+                <a href="{%url 'home'%}"><li>HOME</li></a>
+                <a href="{%url 'about'%}"><li>ABOUT</li></a>
+            </ul>
+        </div>
 
-                <div class="title">
-                        <img src="https://blog.hmgjournal.com/upload/common/activeSquare/binary/201501201742177_DPBBX1FI.jpg" width="360px" height="195px">
-                        <h1>WORD COUNT HOMEPAGE</h1>
-                        <p>Hello This site will tell you the number of words for text.</p>
-                        <p>Up to <strong>2500</strong> texts can be input.</p>
-                </div>
+        <div class="title">
+            <img src="https://blog.hmgjournal.com/upload/common/activeSquare/binary/201501201742177_DPBBX1FI.jpg" width="360px" height="195px">
+             <h1>WORD COUNT HOMEPAGE</h1>
+                <p>Hello This site will tell you the number of words for text.</p>
+                <p>Up to <strong>2500</strong> texts can be input.</p>
+        </div>
 
-                <div class="textbox">
-                                <table class="type07">
-                                                <thead>
-                                                <tr>
-                                                    <th scope="cols">Sequence</th>
-                                                    <th scope="cols">HowtoUse</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <th scope="row">First</th>
-                                                    <td>Copy the text you want to read.</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Second</th>
-                                                    <td>Paste the text into the box (no more than 2500).</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Third</th>
-                                                    <td>Hit the submit button!</td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                            <br>
+        <div class="textbox">
+            <table class="type07">
+                <thead>
+                    <tr>
+                        <th scope="cols">Sequence</th>
+                        <th scope="cols">HowtoUse</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row">First</th>
+                    <td>Copy the text you want to read.</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Second</th>
+                    <td>Paste the text into the box (no more than 2500).</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Third</th>
+                    <td>Hit the submit button!</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    <br>
                     <form action="{%url 'result'%}">
                             <textarea cols="80" rows="10" maxlengt="2500" name="fulltext"></textarea>
                             <br>

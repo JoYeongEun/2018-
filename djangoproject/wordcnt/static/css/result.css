@@ -47,6 +47,7 @@ li:hover{
 .textbox {
   background-color: #FFF;
   opacity: 0.8;
+  height: 500px;
   padding-left: 10px;
   padding-top: 10px; 
   color:#333;
