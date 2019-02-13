@@ -8,6 +8,7 @@ ul{
   height:45px;
   background: #2C3E50;
   padding-top: 14px;
+  margin-top: 0px;
 }
 
 ul li{
@@ -48,8 +49,11 @@ li:hover{
   background-color: #FFF;
   opacity: 0.8;
   height: 500px;
-  padding-left: 10px;
+  padding: 20px 10px 20px 15px;
   padding-top: 10px; 
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
   color:#333;
   font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
   font-size: 14px;
@@ -58,20 +62,33 @@ li:hover{
   text-align: center;
 }
 
+.resultbox {
+  background-color: rgb(195, 228, 196);
+  opacity: 0.88;
+  text-align: center;
+  color:#333;
+  font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  padding: 10px 10px 20px 15px;
+  padding-top: 10px; 
+  overflow: scroll;
+  width: 85%;
+  margin-left: 55px;
+  border: solid #2C3E50 1px;
+} 
+
 footer.day{
-  position: relative;
-  min-height: 1px;
   padding-top: 8px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-bottom: 0;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   background-color: #2C3E50;
   color: #FFF;
   text-align: center;
-  height: 86px;
+  height: 80px;
+  margin-bottom: 0px;
 }
 
 .container {
@@ -123,4 +140,43 @@ button:hover {
 
 .btn-1:hover:after {
   height: 100%;
+}
+
+.rg {
+  color: rgb(231, 53, 53);
+  font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 30pt;
+}
+
+table.type07 {
+  border-collapse: collapse;
+  text-align: center;
+  line-height: 1.5;
+  border: 1px solid gray;
+  margin: 0 auto;
+}
+table.type07 thead {
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  background: #2C3E50;
+}
+table.type07 thead th {
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  color: #fff;
+}
+table.type07 tbody th {
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-bottom: 1px solid gray;
+  background: #ace7da;
+}
+table.type07 td {
+  width: 350px;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid gray;
 }

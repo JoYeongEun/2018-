@@ -16,18 +16,34 @@
     </div>
 
         <div class="textbox">
-                <h1>당신이 입력한 텍스트는 {{total}}개의 단어로 구성되어 있습니다.</h1>
-                <br>
-                <h2>입력한 텍스트:</h2>
+                <h1>당신이 입력한 텍스트는 <div class="rg">{{total}}</div>개의 단어로 구성되어짐</h1>
+                <div class="resultbox">
+                    <h2>입력한 텍스트:</h2>
                     {{full}}
-                <br>
+                </div>
 
-                <h1>단어 카운트:</h1>
-                    {% for word, howmany in dictionary %}
-                    {{word}} : {{howmany}}
-                    <br>
-                    {%endfor%}
+                <h1>▽Count Result▽</h1>
+                
+                    <table class="type07">
+                        <thead>
+                            <tr>
+                                <th scope="cols">단어</th>
+                                <th scope="cols">출현 횟수</th>
+                            </tr>
+                            
+                        </thead>
+                        {% for word, howmany in dictionary %} 
+                        <tbody>
+                            <tr>      
+                            <th scope="row">{{word}}</th>
+                            <td>{{howmany}}</td>
+                            </tr>
+                            </tbody>
+                            {%endfor%}
+                            </table>
+                    
         </div>
+
         <footer class="day">
                 <p>Copyright © ChoYeongEun 2019</p>
                 <p>KungsungUniv.likelion 7th</p>

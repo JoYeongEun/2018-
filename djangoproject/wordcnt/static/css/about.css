@@ -125,6 +125,7 @@ div.text{
   height:150px; 
   float:left;
   padding: 10px 20px 10px 20px;
+  line-height: 10px;
 }
 
 .title {

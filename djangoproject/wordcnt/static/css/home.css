@@ -77,8 +77,11 @@ li:hover{
   font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  overflow: scroll;
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 20px 20px;
 }
 
 footer.day{
@@ -99,6 +102,7 @@ footer.day{
 
 .container {
   padding: 2em;
+  margin: 0 auto;
 }
 
 /* GENERAL BUTTON STYLING */
@@ -118,7 +122,7 @@ button {
   display: block;
   font-size: 18px;
   font-weight: bold;
-  margin: 10px auto;
+  margin-left: 360px;
   padding: 10px 10px;
   position: relative;
   text-transform: uppercase;
